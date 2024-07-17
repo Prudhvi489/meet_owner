@@ -44,7 +44,7 @@ export const RecommendedSellersStyles = makeStyles({
       display: "flex",
       flexDirection: "column",
       justifyContent: "space-between",
-    //   gap: "1rem",
+      //   gap: "1rem",
       "& .title": {
         color: "#000000",
         fontWeight: 600,
@@ -73,3 +73,37 @@ export const RecommendedSellersStyles = makeStyles({
     },
   },
 });
+
+export const LoginStyles = makeStyles({
+  tabStyles: {
+    backgroundColor: "#31539A",
+    borderRadius: "1rem 2.5rem 0rem 0rem",
+    "& .MuiTabs-flexContainer": {
+      gap: "0.4rem"
+    },
+    "& .MuiTabs-indicator": {
+      display: "none"
+    },
+    "& .MuiTab-root": {
+      padding: "1rem",
+      minWidth: "100px",
+      alignItems: "start",
+      backgroundColor: "#31539A",
+      textTransform: "none",
+      fontSize: "1rem",
+      fontWeight: 700,
+      color: "#FFFFFF",
+      borderTopRightRadius: "2.5rem",
+      boxShadow: "4px 0px 4px 0px #00000040",
+    },
+    "& .Mui-selected": {
+      backgroundColor: "#FBAF01",
+      color: "#31539A"
+    },
+  },
+  tabPanelStyles: {
+    backgroundColor: "#FFFFFF",
+    borderRadius: "0rem 0rem 1.5rem 1.5rem",
+    boxShadow: "0px 4px 4px 0px #00000040",
+  }
+})

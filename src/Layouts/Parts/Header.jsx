@@ -1,8 +1,10 @@
 import { Button, Container, Grid, Stack, Typography } from "@mui/material";
 import React from "react";
 import { images } from "../../Config/Imageexports";
+import { useNavigate } from "react-router-dom";
 const Header = () => {
   const navItems = ["Home", "About", "Contact"];
+  const navigate = useNavigate()
   return (
     <>
       <Container maxWidth={"xl"} sx={{background:'#ffffff'}}>
@@ -46,6 +48,7 @@ const Header = () => {
                 startIcon={
                   <img src={images.profileicon} alt="icon" width={"70%"} />
                 }
+                onClick={()=>navigate("/login")}
               >
                 Login
               </Button>
